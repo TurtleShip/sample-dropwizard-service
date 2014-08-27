@@ -1,0 +1,13 @@
+# Ignore IDE
+.idea/
+*.iml
+
+# Ignore Apple files
+.DS_Store
+
+# Ignore target
+target
+
+# Ignore built files
+*.jar
+

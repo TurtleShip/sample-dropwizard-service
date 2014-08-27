@@ -16,7 +16,6 @@ public class SampleService extends Application<SampleConfiguration> {
 
     private static final String BACKEND_URL_PATTERN = "/api/*";
 
-
     public static void main(String[] args) throws Exception {
         new SampleService().run(args);
     }
@@ -32,5 +31,5 @@ public class SampleService extends Application<SampleConfiguration> {
         environment.jersey().register(new HelloResource());
         environment.healthChecks().register("HelloHealthCheck", new HelloHealthcheck());
     }
-    
+
 }

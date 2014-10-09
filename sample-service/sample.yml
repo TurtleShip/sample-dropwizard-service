@@ -1,5 +1,5 @@
 ldapConfiguration:
-    uri: ldaps://ldap.sjc1.yammer.com:636
+    uri: your_ldap_url
     cachePolicy: maximumSize=10000, expireAfterWrite=10m
     userFilter: ou=people,dc=yammer,dc=com
     groupFilter: ou=groups,dc=yammer,dc=com
@@ -9,12 +9,4 @@ ldapConfiguration:
     connectTimeout: 500ms
     readTimeout: 1100ms
     restrictToGroups:
-        - eng
-#        - zeus-admin
-
-#logging:
-#  level: DEBUG
-#  loggers:
-#    io.dropwizard: DEBUG
-#  appenders:
-#    - type: console
+        - some_group
